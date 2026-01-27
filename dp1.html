@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<head>
+    <link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet'>
+    <style>
+    body {
+        font-family: 'Nunito';font-size: 22px;
+    }
+    </style>
+    </head>
+    <body>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Personal - Start Bootstrap Template</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Custom Google font-->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100;200;300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet" />
+        <!-- Bootstrap icons-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body class="d-flex flex-column h-100 bg-light">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white py-3">
+            <div class="container px-5">
+                <a class="navbar-brand" href="index.html"><span class="fw-bolder text-primary">Professional Portfolio</span></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 small fw-bolder">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="resume.html">Resume</a></li>
+                        <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        
+        <div class="container my-5">
+
+ <!-- PROJECT 1 -->
+<section style="max-width: 900px; margin: 0 auto 6em auto; text-align: center;">
+
+  <h1 style="font-size: 3em; font-weight: 600; margin-bottom: 0.3em;">
+    Customized Nametag
+  </h1>
+
+
+  <p style="font-size: 1.2em; line-height: 1.8; font-weight: normal; margin-bottom: 3em;">
+    Working with PrusaSlicer and the Prusa MINI+ was challenging but helped me better understand CAM workflows and machine operation. I initially struggled to find the right slicer settings and later realized the software was in beginner mode, which limited access to important parameters and affected print outcomes. After adjusting the settings, I learned the importance of fully completing the CAM workflow, especially slicing and exporting the updated file so the printer runs the correct instructions. Using the MINI+ also required adjusting to its physical interface, particularly when loading filament and navigating controls. During the nametag print, I noticed stringing and small gaps in the print, likely due to temperature or retraction settings I was still learning to tune. Overall, this experience showed how slicer settings, file preparation, and machine behavior all work together and reinforced the value of testing and iteration.
+  </p>
+
+  <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5em;">
+    <img src="assets/NameTag settings.png" style="width: 100%; border-radius: 8px;">
+    <img src="assets/NTP.jpeg" style="width: 100%; border-radius: 8px;">
+    <img src="assets/nametagpic.png" style="width: 100%; border-radius: 8px;">
+  </div>
+
+</section>
+
+
+<!-- PROJECT 2 -->
+<section style="max-width: 900px; margin: 0 auto 6em auto; text-align: center;">
+
+  <h1 style="font-size: 3em; font-weight: 600; margin-bottom: 0.3em;">
+    A Calibration "Torture Test"
+  </h1>
+
+
+  <p style="font-size: 1.2em; line-height: 1.8; font-weight: normal; margin-bottom: 3em;">
+    This iteration of the helix torture test felt more manageable because I had a better understanding of the full 3D printing process, especially how decisions in PrusaSlicer directly affect the Prusa MINI+. Since the print was estimated to take about three hours, I paid closer attention to setup, which helped me catch how small CAM mistakes can carry through the workflow. I rotated the helix upright but forgot to ensure it was flat on the build plate, which caused issues that weren’t obvious until the file was already sliced and loaded. After troubleshooting, the problem turned out to be model orientation rather than filament type, and once the alignment was fixed and the file re-sliced, the print ran as expected. After the project was done, according to print quality guidelines, the final print showed a successful overall shape but a slightly uneven bottom and some stringing across open gaps, likely caused by filament oozing during travel moves. This reinforced how important proper bed contact, retraction, and temperature settings are, and showed that improving print quality depends on carefully checking slicer settings and iterating rather than assuming the printer is at fault.
+  </p>
+
+  <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5em;">
+    <img src="assets/HELIX print settings.png" style="width: 100%; border-radius: 8px;">
+    <img src="assets/HP.jpeg" style="width: 100%; border-radius: 8px;">
+    <img src="assets/hfd.jpeg" style="width: 100%; border-radius: 8px;">
+  </div>
+
+</section>
+
+
+<!-- PROJECT 3 -->
+<section style="max-width: 900px; margin: 0 auto 6em auto; text-align: center;">
+
+  <h1 style="font-size: 3em; font-weight: 600; margin-bottom: 0.3em;">
+    Open Source Assistive Device
+  </h1>
+
+  <p style="font-size: 1.2em; line-height: 1.8; font-weight: normal; margin-bottom: 3em;">
+    For this design, I chose an assistive device I could use in my daily life, a jar opener! The design and print process took about an hour and a half, during which I felt more comfortable using PrusaSlicer. I imported the file, oriented the jar opener flat, transferred it to a USB drive, and began printing without any issues. The filament loaded smoothly, and the base printed cleanly with no gaps, indicating the filament diameter was set correctly. However, once the print finished, I noticed excess filament on the hook used to slide under the jar lid, causing it to form a blob rather than a defined edge. This issue was likely due to overheating, possibly from using a machine previously set to a higher extrusion temperature. Despite this flaw, I tested the jar opener on a Pringles container, and it worked successfully, breaking the plastic lid. This result gives me confidence that the design will be effective on metal jar lids as well.
+  </p>
+
+  <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5em;">
+    <img src="assets/ads.png" style="width: 100%; border-radius: 8px;">
+    <img src="assets/jaropener.jpeg" style="width: 100%; border-radius: 8px;">
+    <img src="assets/jardemo.jpeg" style="width: 100%; border-radius: 8px;">
+  </div>
+
+</section>
+
+
+                    <!-- EXTRA NOTE: trouble inserting the filament for callibration and printing pieces (gear photo) -->
+                    <!-- First struggle was with the filament loading. work to get in and callibrated. result was the first print. second thing 
+                    was an initial non-understanding of where the print was coming from (just loaded in whatever was on the joystick)
+                    
+                    Prusa Slicer is how we transition from CAD to CAM, slicing the object into tangible and workable parts that the computer can then 
+                    build its layers up on. Here are the details on the specifics  -->
+                </p>
+
+                </p>
+           
+            
+        </p>
+
+        
+
+
+
+    </body>
+    
+        <main class="flex-shrink-0"> 
+
+        </main>
