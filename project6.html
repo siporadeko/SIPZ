@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>Accessible Delivery Hub - Stage 2</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <style>
+        body { 
+            font-family: 'Plus Jakarta Sans', sans-serif; 
+            line-height: 1.6; 
+            color: #1a1a1a; 
+            background-color: #fcfcfc;
+        }
+        .container { max-width: 950px; margin-top: 60px; margin-bottom: 100px; }
+        h1 { font-weight: 800; letter-spacing: -1px; margin-bottom: 40px; }
+        h2 { font-weight: 700; color: #1e30f3; margin-top: 50px; margin-bottom: 20px; font-size: 1.75rem; }
+        .write-up-block { margin-bottom: 30px; white-space: pre-wrap; }
+        
+        /* Image Layout Styles */
+        .img-grid { display: grid; gap: 20px; margin: 30px 0; }
+        .grid-4 { grid-template-columns: repeat(2, 1fr); }
+        .grid-3 { grid-template-columns: repeat(3, 1fr); }
+        .grid-1 { grid-template-columns: 1fr; }
+        
+        .img-placeholder { 
+            background: #f0f0f0; 
+            border: 2px dashed #ccc; 
+            border-radius: 12px; 
+            display: flex; 
+            align-items: center; 
+            justify-content: center; 
+            min-height: 250px;
+            overflow: hidden;
+            transition: transform 0.2s ease-in-out;
+        }
+        .img-placeholder:hover {
+            transform: scale(1.02);
+            border-color: #1e30f3;
+        }
+        .img-placeholder img { 
+            width: 100%; 
+            height: 100%; 
+            object-fit: cover; 
+            border-radius: 12px; 
+        }
+        
+        .metric-card { 
+            background: #fff; 
+            border: 1px solid #eee; 
+            padding: 25px; 
+            border-radius: 15px; 
+            margin-bottom: 20px;
+            border-left: 5px solid #1e30f3;
+        }
+        strong { font-weight: 700; }
+
+        @media (max-width: 768px) {
+            .grid-4, .grid-3 { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1 class="text-center">Accessible Delivery Hub: Stage 2</h1>
+
+        <h2>Needs Statement</h2>
+        <div class="write-up-block">Brandeis students with physical and visual disabilities need a standardized, waist-height delivery interface because current ground-level drop-offs create physical hazards and navigation barriers.</div>
+
+        <h2>Design Principles</h2>
+        <div class="metric-card">
+            <strong>Accessibility:</strong> The shelf surface must be between 15 and 48 inches from the ground to meet ADA reach standards.<br>
+            <strong>Visibility:</strong> The unit must use high-contrast colors (70% contrast) to be visible in the 6:00 PM to 9:00 PM "critical window."<br>
+            <strong>Tactility:</strong> The design must include physical textures so it can be identified by touch alone.
+        </div>
+
+        <h2>Measurement & Testing Methodology</h2>
+        <div class="write-up-block">
+<strong>Visibility</strong>
+The Metric: The maximum distance (in feet) a person can correctly identify the sign or tactile icons in the dark (6:00 PM – 9:00 PM).
+Goal: Increase the detection distance by 50% between Cycle 1 and Cycle 4.
+How to iterate: If Cycle 1 (small text) is only visible from 2 feet, Cycle 2 (larger CAD geometry) should aim for 5 feet.
+
+<strong>The "Tactile Recognition" Test (Usability)</strong>
+The Metric: The time (in seconds) it takes a user to identify the "Delivery Hub" icon using only their hands.
+Goal: Reduce identification time.
+How to iterate: If the texture in Cycle 1 is too shallow, Cycle 2 should change the CAD to make the bumps taller or sharper.
+
+My team and I plan to test visibility and usability by having Sandra place a food delivery order to the location using the pin we created. We will also put up our sign at the location. If the delivery driver is able to find the spot and leave the order on the designated shelf, that will indicate the system is working properly. If not, we will make the necessary adjustments and refine our approach.
+        </div>
+
+        <h2>Design Strategy</h2>
+        <div class="write-up-block">
+For our sketch, we created a 3D-printable sign that directly addresses our Needs Statement by transforming a standard shelf into an accessible delivery hub. The primary feature of the design is the large, centered "DROP HERE" text paired with recognizable food and beverage icons. This visual and tactile layout is designed to be immediately intuitive for delivery drivers, ensuring they place orders at the correct, waist-height level rather than on the ground.
+
+To meet our Design Principles, the sign includes the following specific features:
+<strong>Tactility:</strong> The text and icons are designed as raised 3D geometries, allowing students with visual impairments to identify the hub through touch alone.
+<strong>Accessibility:</strong> By designing a mounting system that fits our specific 3-tier shelf, we ensure the sign is positioned between 15 and 48 inches from the ground, meeting ADA reach standards.
+<strong>Visibility:</strong> The high-contrast layout of the icons is intended to be recognizable even in low-light "critical windows" between 6:00 PM and 9:00 PM.
+        </div>
+        <div class="img-grid grid-1">
+            <div class="img-placeholder">
+                <img src="assets7/sketch2.png" alt="Initial Design Sketch">
+            </div>
+        </div>
+
+        <h2>Cycle 1: Baseline Prototype</h2>
+        <div class="img-grid grid-1">
+            <div class="img-placeholder">
+                <img src="assets7/cycleone.jpeg" alt="Cycle 1 Laser Cut">
+            </div>
+        </div>
+        <div class="write-up-block">
+For our first print (Cycle 1), we used Lightburn to laser cut our sign. This was basically our test to see if the size was right and if the clips actually stayed on the Amazon shelf.
+What we learned from testing: We ran a couple of quick tests to get some numbers. We checked Visibility Distance (how far away you can read it) around 3.5 feet in low light and Tactile Recognition (how fast you can identify the icons by touch).
+<strong>The Good:</strong> The sign looked great and fit the shelf perfectly.
+<strong>The Bad:</strong> The tactile bumps were a little too flat. It took way too long to "read" the sign with just our hands because the plastic was too smooth.
+<strong>The Pivot:</strong> For Cycle 2, we’re going back into CAD to make those tactile icons much taller and sharper so they’re easier to feel.
+        </div>
+
+        <h2>Cycle 2: CAD Redesign (Shape)</h2>
+        <div class="write-up-block">
+For our second version, we shifted from the flat laser-cut baseline to a more functional assembly to solve the mounting and usability issues we found in Cycle 1. We also played around with the shape to make something newer. The original laser-cut sign didn't have a secure way to attach to the Amazon shelf (which we also built during this cycle), and the flat surface didn't provide enough tactile feedback for someone to "read" the icons by hand.
+
+<strong>The Key CAD Changes:</strong>
+<strong>Zip Tie Integration:</strong> We added specific mounting holes directly into the CAD design. This allows us to use zip ties to lock the sign onto the shelf bars, making it much more stable so it doesn't wiggle or fall off when a student or delivery driver touches it.
+<strong>Tactile Pop:</strong> We redesigned the icons and text to have significant depth. This makes the sign much easier to identify through touch alone, meeting our design principle for tactility.
+<strong>Material Shift:</strong> We moved away from a single flat piece to this layered assembly to increase the overall durability and visual contrast of the hub.
+
+<strong>Testing & Results:</strong>
+Visibility Distance: Our detection distance jumped from 3.5 feet (Cycle 1) to 5.5 feet since we added some visual contrast. 
+Tactile Recognition Time: Adding that physical depth made a huge difference. In our usability tests, the time it took to identify the "Delivery Hub" icon by hand was cut in half compared to the flat Cycle 1 version.
+Mounting Success: The new zip-tie holes successfully secured the sign at the required waist-height (between 15 and 48 inches), ensuring the hub stays accessible and in place for every delivery.
+        </div>
+        <div class="img-grid grid-4">
+            <div class="img-placeholder"><img src="assets7/cycletwo.png" alt="Cycle 2 Change 1"></div>
+            <div class="img-placeholder"><img src="assets7/cycletwoo.png" alt="Cycle 2 Change 2"></div>
+            <div class="img-placeholder"><img src="assets7/cycletwooo.png" alt="Cycle 2 Change 3"></div>
+            <div class="img-placeholder"><img src="assets7/cycletwoooo.png" alt="Cycle 2 Change 4"></div>
+        </div>
+
+        <h2>Cycle 3: CAM Optimization (Machine Settings)</h2>
+        <div class="write-up-block">
+In Cycle 3, we kept our CAD design from Cycle 2 the same but focused entirely on our CAM settings within LightBurn. Our goal was to refine the surface of the sign to make the tactile elements more professional and easier to identify by touch.
+
+<strong>The Key CAM Changes:</strong>
+<strong>Switch to Engraving Mode:</strong> Instead of just cutting out shapes, we utilized the engraving feature in LightBurn. This allowed us to "etch" the food icons and "DROP HERE" text directly into the material with varying depths.
+<strong>Scan Parameter Adjustments:</strong> We adjusted the Line Interval and DPI settings in the Cut Settings Editor to create a smoother, more consistent finish. By using a high-quality dithering mode like Stucki, we ensured the transition between the engraved icons and the base board was sharp and distinct.
+<strong>Precision Power Control:</strong> We fine-tuned the laser's Max and Min Power settings to ensure the engraving was deep enough to be felt without scorching the acrylic base.
+
+<strong>Testing & Results:</strong>
+Tactile Recognition Time: The switch to engraving was a game-changer for usability. Because the engraved surface has a consistent, slightly "toothed" texture compared to the smooth plastic stickers from Cycle 2, users were able to identify the icons by touch significantly faster.
+Visibility Distance: The engraving added a layer of visual "matte" finish to the icons, which reduced glare in the 6:00 PM – 9:00 PM "critical window". This pushed our visibility distance from 5.5 feet to 6.2 feet.
+Durability: Unlike the stickers used in Cycle 2, which could peel off over time, the engraved design is a permanent part of the board, ensuring the hub remains accessible for the long term.
+        </div>
+        <div class="img-grid grid-3">
+            <a href="assets7/cyclethree.png" target="_blank" class="img-placeholder">
+                <img src="assets7/cyclethree.png" alt="Cycle 3 Setting 1">
+            </a>
+            <a href="assets7/cyclethreee.png" target="_blank" class="img-placeholder">
+                <img src="assets7/cyclethreee.png" alt="Cycle 3 Setting 2">
+            </a>
+            <a href="assets7/cycle3f.png" target="_blank" class="img-placeholder">
+                <img src="assets7/cycle3f.png" alt="Cycle 3 Setting 3">
+            </a>
+        </div>
+
+        <h2>Cycle 4: Final Material (Acrylic)</h2>
+        <div class="write-up-block">
+For our final iteration, we made the biggest change yet by switching our base material from wood to acrylic. While the wood in Cycle 3 was great for testing our engraving settings, it didn't provide the professional look or the high-contrast visibility we needed for a campus delivery hub.
+
+<strong>The Key Material Changes:</strong>
+<strong>Wood to Acrylic:</strong> We moved away from the wooden base and used a thick acrylic board. This change makes the sign weather-resistant for campus use and gives it a much cleaner, more modern look.
+<strong>High-Contrast Layering:</strong> By combining the acrylic with our design overlays, we achieved the 70% color contrast required by our design principles.
+<strong>Light Refraction:</strong> The acrylic base catches ambient light much better than wood, which is a huge help during the 6:00 PM – 9:00 PM "critical window" when visibility is lowest.
+
+<strong>Testing & Results (Final Score):</strong>
+Visibility Distance: This was our biggest win. The contrast of the green on acrylic allowed our testers to identify the "Drop Here" sign from 9 feet away. This is a massive jump from our 3.5-foot baseline in Cycle 1, easily beating our goal of a 50% increase.
+Tactile Recognition Time: The engraved acrylic felt even "sharper" than the engraved wood, allowing users to identify the food icons by touch in record time.
+Durability: The acrylic is much tougher and won't warp or degrade if it gets hit by rain or snow, making it a "repair the world" solution that will actually last on campus.
+
+<strong>Final Conclusion:</strong> Moving from a flat laser-cut sign to an engraved acrylic hub, we successfully created a tool that makes deliveries accessible for everyone. 
+
+<strong>Why this matters for our Final Deliverable:</strong>
+Our Dozuki Guide will not be about how to "assemble an Amazon shelf". It will be a guide on how to 3D print and install the accessibility upgrade kit we designed so that any shelf can be turned into an Accessible Delivery Hub.
+        </div>
+        <div class="img-grid grid-1">
+            <div class="img-placeholder">
+                <img src="assets7/cyclefour.png" alt="Final Prototype">
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
